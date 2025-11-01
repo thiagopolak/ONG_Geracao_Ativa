@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+<!--Cabeçalho padrão para todas as páginas-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro - ONG Geração Ativa</title>
 </head>
 <body>
-  <header>
     <header>
-        <h1>ONG Geração Ativa</h1>
+            <img src="assets/images/logoV2.png" alt="Logotipo ONG Geração Ativa" width="200"> 
         <nav>
             <ul>
                 <li><a href="index.html">Início</a></li>
@@ -17,12 +17,98 @@
                 
             </ul>
         </nav>
-    <p>Movimente-se com a <strong>Geração Ativa</strong> e leve movimento e bem-estar à terceira idade!</p>
+    <p>Movimente-se com a <strong>Geração Ativa</strong> levando movimento e bem-estar à terceira idade!</p>
   </header>
 
-  <main>
-    
-  </main>
+    <main>
+        <h1>Cadastro de Voluntário / Doador</h1>
+
+        <form id="cadastroForm" action="#" method="post" novalidate>
+            <fieldset>
+            <legend>Dados pessoais</legend>
+
+                <label for="nome">Nome completo</label>
+                <input id="nome" name="nome" type="text" required  autocomplete="name" minlength="3">
+
+                <label for="email">E-mail</label>
+                <input id="email" name="email" type="email" required placeholder="seu@email.com" autocomplete="email">
+
+                <label for="cpf">CPF</label>
+                <input id="cpf" name="cpf" type="text" inputmode="numeric" required pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00">
+                
+                <label for="telefone">Telefone</label>
+                <input id="telefone" name="telefone" type="tel" inputmode="tel" required placeholder="(00) 90000-0000">
+
+                <label for="nascimento">Data de nascimento</label>
+                <input id="nascimento" name="nascimento" type="date" required max="2008-12-31">
+
+            </fieldset>
+
+            <fieldset>
+            <legend>Endereço</legend>
+
+                <label for="cep">CEP</label>
+                <input id="cep" name="cep" type="text" inputmode="numeric" required placeholder="00000-000" pattern="\d{5}-\d{3}">
+
+                <label for="endereco">Endereço</label>
+                <input id="endereco" name="endereco" type="text" required>
+
+                <label for="cidade">Cidade</label>
+                <input id="cidade" name="cidade" type="text" required>
+
+                <label for="estado">Estado</label>
+                <select id="estado" name="estado" required>
+                    <option value="">Selecione</option>
+                    <option value="AC">AC</option>
+                    <option value="AL">AL</option>
+                    <option value="AP">AP</option>
+                    <option value="AM">AM</option>
+                    <option value="BA">BA</option>
+                    <option value="CE">CE</option>
+                    <option value="DF">DF</option>
+                    <option value="ES">ES</option>
+                    <option value="GO">GO</option>
+                    <option value="MA">MA</option>
+                    <option value="MT">MT</option>
+                    <option value="MS">MS</option>
+                    <option value="MG">MG</option>
+                    <option value="PA">PA</option>
+                    <option value="PB">PB</option>
+                    <option value="PR">PR</option>
+                    <option value="PE">PE</option>
+                    <option value="PI">PI</option>
+                    <option value="RJ">RJ</option>
+                    <option value="RN">RN</option>
+                    <option value="RS">RS</option>
+                    <option value="RO">RO</option>
+                    <option value="RR">RR</option>
+                    <option value="SC">SC</option>
+                    <option value="SP">SP</option>
+                    <option value="SE">SE</option>
+                    <option value="TO">TO</option>
+                </select>
+            </fieldset>
+
+        <fieldset>
+        <legend>Você se inscreve como</legend>
+
+            <input type="checkbox" id="danca" name="perfil[]" value="professor-danca">
+            <label for="danca">Professor(a) de Dança</label><br>
+
+            <input type="checkbox" id="alongamento" name="perfil[]" value="professor-alongamento">
+            <label for="alongamento">Professor(a) de Alongamento</label><br>
+
+            <input type="checkbox" id="funcional" name="perfil[]" value="professor-funcional">
+            <label for="funcional">Professor(a) de Treino Funcional</label><br>
+
+            <input type="checkbox" id="doador" name="perfil[]" value="doador">
+            <label for="doador">Doador(a)</label><br>
+        </fieldset>
+        <p>
+            <button type="submit" class="btn">Enviar cadastro</button>
+        </p>
+        </form>
+    </main>
 
     <footer>
         <p>&copy; 2025 Geração Ativa - Incentivo ao Esporte e Bem-Estar na Melhor Idade</p>

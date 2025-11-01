@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+<!--Cabeçalho padrão para todas as páginas-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projetos - ONG Geração Ativa</title>
 </head>
 <body>
     <header>
-        <h1>ONG Geração Ativa</h1>
+            <img src="assets/images/logoV2.png" alt="Logotipo ONG Geração Ativa" width="200">       
         <nav>
             <ul>
                 <li><a href="index.html">Início</a></li>
@@ -17,6 +18,46 @@
             </ul>
         </nav>
     </header>
+    <main>
+        <h1>Projetos Sociais</h1>
+        <p>Conheça nossos projetos e oportunidades de voluntariado.</p>
+
+        <article class="project-card" aria-labelledby="p1-title">
+            <img src="assets/images/aula_danca.jpeg" alt="Aula de Dança" loading="lazy" width="250">
+            <h2 id="p1-title">Aula de Dança</h2>
+            <p>Lares de idosos e instituições parceiras recebem semanalmente aulas de dança, promovendo atividade cardio respiratória em um ambiente mais ludico.</p>
+
+            <p>
+                <a href="cadastro.html" class="btn">Quero ser voluntário</a>
+                <a href="#donate" class="btn-secondary">Doar</a>
+            </p>
+        </article>
+
+        <article class="project-card" aria-labelledby="p2-title">
+            <img src="assets/images/treino.funcional.jpeg" alt="Aula de Dança" loading="lazy" width="250">
+            <h2 id="p2-title">Treino funcional</h2>
+            <p>Lares de idosos e instituições parceiras recebem semanalmente treinos funcionais em grupo, reavendo  a força e autonomia dos alunos.</p>
+
+            <p>
+                <a href="cadastro.html" class="btn">Quero ser voluntário</a>
+                <a href="#donate" class="btn-secondary">Doar</a>
+            </p>
+        </article>
+        
+        <section id="volunteer" aria-labelledby="vol-title" class="container">
+            <h2 id="vol-title">Oportunidades de Voluntariado</h2>
+            <p>Movimente-se com a <strong>Geração Ativa</strong> levando movimento e bem-estar à terceira idade!</p>
+            <a href="cadastro.html" class="btn">Ir para cadastro</a>
+
+        </section>
+
+        <section id="donate" aria-labelledby="don-title" class="container">
+        <h2 id="don-title">Doações</h2>
+        <p>Plataforma segura para doações com prestação de contas periódica.</p>
+        
+        </section>
+    </main>
+
     <footer>
         <p>&copy; 2025 Geração Ativa - Incentivo ao Esporte e Bem-Estar na Melhor Idade</p>
     </footer>
