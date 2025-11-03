@@ -326,7 +326,16 @@ form {
 fieldset {
     padding: 20px;
     border: 1px solid var(--color-neutral-300);
+    margin: 0;
+    text-align: left;
 }
+
+legend {
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: left; /* Alinha o título à esquerda */
+}
+
 label {
   font-weight: 600;
   margin-top: var(--space-1);
@@ -338,6 +347,10 @@ input, select {
   border-radius: 6px;
   width: 100%;
 }
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 8px;
+}
 
 input:focus, select:focus {
   outline: 2px solid var(--color-primary-light);
@@ -347,7 +360,6 @@ button.btn {
   width: fit-content;
   
 }
-
 
 /* =========================================================
    FOOTER
