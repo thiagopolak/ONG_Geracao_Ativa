@@ -585,7 +585,8 @@ button.btn {
 }
 
 .main-nav ul.menu a:hover {
-  color: var(--color-primary, #007BFF);
+  color: var(--color-primary-light, #007BFF);
 }
+
 
  
