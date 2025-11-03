@@ -4,8 +4,8 @@
 
 /*  Paleta de cores */
 :root {
-  --color-primary: #03621e;
-  --color-primary-light: #3cb646;
+  --color-primary: #38b23e;
+  --color-primary-light: #80EF80;
   --color-secondary: #38b23e;
   --color-accent: #f6ad55;
   --color-danger: #e53e3e;
@@ -110,6 +110,27 @@ body {
   margin-top: var(--space-3);
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
+/* ====== Barra de progresso ====== */
+
+.progress-bar {
+  width: 100%;
+  height: 14px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  margin: 8px 0 14px;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0%;
+  background-color: #2e7d32; /* verde institucional */
+  border-radius: 10px 0 0 10px;
+  transition: width 1.5s ease-out;
+}
+
+
 /* =========================================================
    ALERTS / TOASTS
    ========================================================= */
@@ -186,6 +207,7 @@ p, li {
   background: var(--color-secondary);
   color: #fff;
   margin-top: 50px;
+ 
 }
 
 .btn-cadastro {
@@ -323,7 +345,9 @@ input:focus, select:focus {
 
 button.btn {
   width: fit-content;
+  
 }
+
 
 /* =========================================================
    FOOTER
