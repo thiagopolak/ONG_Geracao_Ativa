@@ -1,52 +1,86 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
 <!--Cabeçalho padrão para todas as páginas-->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ONG Geração Ativa</title>
     <meta name="description" content="ONG Geração Ativa - Incentivo ao Esporte e Bem-Estar na Melhor Idade">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <header>
-            <img src="assets/images/logoV2.jpeg" alt="Logotipo ONG Geração Ativa" width="200">       
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="projeto.html">Projeto</a></li>
-                <li><a href="cadastro.html">Cadastro</a></li>                
-            </ul>
-        </nav>
+    <header class="site-header" role="banner">
+        <div class="container">
+            <a href="index.html" class="brand" aria-label="Início - ONG Geração Ativa">
+                <img src="assets/images/LogoV3bg.png" class="logo" alt="Logotipo ONG Geração Ativa" />
+            </a>
+
+            <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <nav class="main-nav" role="navigation" aria-label="Menu principal">
+                <ul class="menu">
+
+                    <li class="has-submenu">
+                    <a href="index.html">Inicio ▾</a>
+                    <ul class="submenu">
+                        <li><a href="projetos.html">Projetos</a></li>
+                        <li><a href="cadastro.html">Cadastro</a></li>
+        
+                    </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section>
-            <h2>Quem somos</h2>
-            <p>
-                Somos uma organização sem fins lucrativos que leva mais saúde, movimento e bem-estar às pessoas da terceira idade.
-                Atuamos em lares e instituições, promovendo atividades físicas, aulas de dança, alongamentos e treinos funcionais que fortalecem corpo e mente.
-            </p>
-        </section>
+            <section class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <h1 id="hero-title">Nossa missão: saúde e bem-estar</h1>
+        <p>Proporcionar uma vida mais funcional, saudável e feliz às pessoas na melhor idade, promovendo autonomia, contato humano e senso de comunidade por meio do exercício e da convivência.</p>
+        <img class="main-banner" src="assets/images/LogoV2.png" alt="Banner Geração Ativa" loading="lazy" />
+      </div>
+    </section>
 
-        <section>
-            <h2>Missão da ONG Geração Ativa</h2>
-            <p>
-                Proporcionar uma vida mais funcional, saudável e feliz às pessoas na melhor idade, promovendo autonomia, contato humano e senso de comunidade por meio do exercício e da convivência.
-            </p>
-        </section>
+    <section class="about container" aria-labelledby="about-title">
+      <h2 id="about-title">Sobre a ONG</h2>
+      <p>Somos uma organização sem fins lucrativos que leva mais saúde, movimento e bem-estar às pessoas da terceira idade.</p>
+      <p>Atuamos em lares e instituições, promovendo atividades físicas, aulas de dança, alongamentos e treinos funcionais que fortalecem corpo e mente.</p><br>
+      
+      <ul>
+        <li>Equipe: 23 colaboradores</li>
+        <li>Voluntários: rede com mais de 200 profissonais do esporte</li>
+        <li>Relatórios de transparência disponíveis para download</li>
+      </ul>
+      <div class="container-img">
+         <img src="assets/images/treino_logo.png" alt="" loading="lazy" class="img-voluntario" />
+     </div>
+      <a href="assets/docs/relatorioW3C.pdf" class="btn" aria-label="Download relatório de transparência">Ver relatório</a>
+    
+    </section>
 
-        <section>
-            <h2>Fale conosco</h2>
+    <section class="contact container" aria-labelledby="contact-title">
+        <h2 id="contact-title">Entre em Contato</h2>
+        <div class="contact-card">
             <address>
-                <p>Endereço: Rua Av. Brasilia, 156 - Bairro Novo Mundo - Curitiba/PR</p>
-                <p>Telefone: (41) 91234-5678</p>
-                <p>Email: contato@ongativa.org.br</p>
+            <p><strong>Endereço:</strong> Av. Brasilia, 156 - Bairro Novo Mundo </p>
+            <p><strong>Telefone:</strong> <a href="tel:+551177777777">+55 (41) 91234-5678</a></p>
+            <p><strong>Email:</strong> <a href="mailto:teste@behelp.org">contato@ongativa.org.br</a></p>
             </address>
+        </div>
         </section>
-    </main>
+  </main>
 
-    <footer>
-        <p>&copy; 2025 Geração Ativa - Incentivo ao Esporte e Bem-Estar na Melhor Idade</p>
-    </footer>
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Geração Ativa - Incentivo ao Esporte e Bem-Estar na Melhor Idade.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
 </body>
 </html>

@@ -1,0 +1,55 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
+  <title id="title">Banner Geração Ativa — Promovendo saúde e bem-estar para a melhor idade</title>
+  <desc id="desc">Banner com logomarca estilizada e texto: Geração Ativa. Fundo em gradiente verde com elemento gráfico circular representando movimento.</desc>
+
+  <!-- background gradient -->
+  <defs>
+    <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#E8F7F0"></stop>
+      <stop offset="55%" stop-color="#CFF0DE"></stop>
+      <stop offset="100%" stop-color="#B6E8C8"></stop>
+    </linearGradient>
+
+    <radialGradient id="g2" cx="30%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.3"></stop>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"></stop>
+    </radialGradient>
+
+    <filter id="f-shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#0b3b23" flood-opacity="0.12"></feDropShadow>
+    </filter>
+  </defs>
+
+  <!-- background -->
+  <rect width="1200" height="300" fill="url(#g1)"></rect>
+
+  <!-- decorative wave/shape -->
+  <path d="M0,220 C200,140 400,260 600,200 C800,140 1000,260 1200,200 L1200,300 L0,300 Z" fill="#EAF9F0" opacity="0.9"></path>
+
+  <!-- circular logo mark (movement icon) -->
+  <g transform="translate(110,150)" filter="url(#f-shadow)">
+    <circle cx="0" cy="0" r="72" fill="#2e7d32"></circle>
+    <!-- inner circle -->
+    <circle cx="-8" cy="-6" r="48" fill="#fff" opacity="0.06"></circle>
+    <!-- stylized person (head + arm forming a motion curve) -->
+    <circle cx="-8" cy="-20" r="10" fill="#fff"></circle>
+    <path d="M-20,2 C-2,10 18,12 36,2" stroke="#fff" stroke-width="6" stroke-linecap="round" fill="none"></path>
+    <path d="M-28,22 C-10,12 14,20 36,22" stroke="#fff" stroke-width="6" stroke-linecap="round" fill="none" opacity="0.85"></path>
+  </g>
+
+  <!-- Main title -->
+  <g transform="translate(220,110)">
+    <text x="0" y="0" font-family="Segoe UI, Roboto, Arial, sans-serif" font-size="48" font-weight="700" fill="#114B2C">
+      Geração <tspan fill="#2e7d32">Ativa</tspan>
+    </text>
+
+    <text x="0" y="48" font-family="Segoe UI, Roboto, Arial, sans-serif" font-size="18" fill="#145C3A">
+      Promovendo saúde e bem-estar para a melhor idade
+    </text>
+  </g>
+
+
+  <!-- subtle radial highlight -->
+  <ellipse cx="900" cy="60" rx="160" ry="48" fill="url(#g2)" opacity="0.5"></ellipse>
+</svg>

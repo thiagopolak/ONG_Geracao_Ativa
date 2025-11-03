@@ -1,27 +1,44 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
 <!--Cabeçalho padrão para todas as páginas-->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cadastro - ONG Geração Ativa</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <header>
-            <img src="assets/images/logoV2.jpeg" alt="Logotipo ONG Geração Ativa" width="200"> 
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="projeto.html">Projeto</a></li>
-                <li><a href="cadastro.html">Cadastro</a></li>
-                
-            </ul>
-        </nav>
-    <p>Movimente-se com a <strong>Geração Ativa</strong> levando movimento e bem-estar à terceira idade!</p>
-  </header>
+    <header class="site-header" role="banner">
+        <div class="container">
+            <a href="index.html" class="brand" aria-label="Início - ONG Geração Ativa">
+                <img src="assets/images/LogoV3bg.png" class="logo" alt="Logotipo ONG Geração Ativa" />
+            </a>
+
+            <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <nav class="main-nav" role="navigation" aria-label="Menu principal">
+                <ul class="menu">
+
+                    <li class="has-submenu">
+                    <a href="index.html">Inicio ▾</a>
+                    <ul class="submenu">
+                        <li><a href="projetos.html">Projetos</a></li>
+                        <li><a href="cadastro.html">Cadastro</a></li>
+        
+                    </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
     <main>
         <h1>Cadastro de Voluntário / Doador</h1>
+        <p>Movimente-se com a <strong>Geração Ativa</strong> levando movimento e bem-estar à terceira idade!</p>
 
         <form id="cadastroForm" action="#" method="post" novalidate>
             <fieldset>
@@ -110,8 +127,11 @@
         </form>
     </main>
 
-    <footer>
-        <p>&copy; 2025 Geração Ativa - Incentivo ao Esporte e Bem-Estar na Melhor Idade</p>
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <p>&copy; <span id="year"></span> Geração Ativa - Incentivo ao Esporte e Bem-Estar na Melhor Idade.</p>
+        </div>
     </footer>
+    <script src="assets/js/main.js" defer></script>
 </body>
 </html>
